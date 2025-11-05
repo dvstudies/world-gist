@@ -5,7 +5,9 @@ import { Html } from "@react-three/drei";
 export default function Points({ pt }) {
     // const active = useStore((state) => state.active);
 
-    const texture = new THREE.TextureLoader().load(pt.path);
+    const texture = pt.active
+        ? new THREE.TextureLoader().load(pt.path)
+        : undefined;
 
     return (
         <>
@@ -15,7 +17,7 @@ export default function Points({ pt }) {
                 scale={pt.size}
                 name={pt.asciiname}
             >
-                <spriteMaterial map={pt.active ? texture : undefined} />
+                <spriteMaterial map={texture} />
                 {/* {pt.asciiname == active && (
                     <Html
                         // position={[0, -size / 2, 0]}
