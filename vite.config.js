@@ -6,7 +6,7 @@ export default defineConfig({
     plugins: [react()],
     root: "src",
     publicDir: "public",
-    base: "/",
+    base: "/world-gist/",
     build: {
         outDir: "../dist",
         emptyOutDir: true,
