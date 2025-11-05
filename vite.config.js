@@ -7,10 +7,6 @@ export default defineConfig({
     root: "src",
     publicDir: "public",
     base: "/",
-    server: {
-        host: true,
-        open: !isCodeSandbox,
-    },
     build: {
         outDir: "../dist",
         emptyOutDir: true,
