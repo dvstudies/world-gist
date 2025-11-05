@@ -13,8 +13,8 @@ function Root() {
     const [loaded, setLoaded] = useState(0);
 
     const jsons = {
-        cities: { file: "/cities.json" },
-        umap: { file: "/umap.json" },
+        cities: { file: "./cities.json" },
+        umap: { file: "./umap.json" },
     };
 
     useEffect(() => {

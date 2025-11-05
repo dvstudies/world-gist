@@ -1,8 +1,8 @@
 import { OrbitControls, Bounds, useBounds } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-import Layout from "/ui/Layout";
-import Scene from "/scene/Scene";
+import Layout from "./ui/Layout";
+import Scene from "./scene/Scene";
 
 export default function App() {
     return (
