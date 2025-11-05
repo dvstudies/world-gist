@@ -1,0 +1,39 @@
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #000000, #222222);
+}
+
+#search_bar,
+#minimap {
+    position: absolute;
+    margin: 4vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+#minimap {
+    bottom: 0;
+    right: 0;
+}
+
+.leaflet-control-attribution {
+    right: 8px !important;
+    bottom: 8px !important;
+    /* writing-mode: vertical-rl; */
+    /* transform: rotate(180deg) !important; */
+    white-space: nowrap;
+    font-size: 0.8em;
+    padding: 5px 10px !important;
+    border-radius: 100px;
+    font-family: "Work Sans";
+    background-color: #373c4b !important;
+    /* border: 1px solid black; */
+    /* display: none !important; */
+}
