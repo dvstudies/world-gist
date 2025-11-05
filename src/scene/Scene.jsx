@@ -13,7 +13,7 @@ export default function Scene() {
 
     umap.forEach((pt) => {
         if (pt.timestep < 49) {
-            const folder = "./intermediates";
+            const folder = "/intermediates";
             const tm = pt.timestep.toString();
             const path = `${folder}/${pt.geoid}_${seed}_${tm.padStart(
                 3,
@@ -23,7 +23,7 @@ export default function Scene() {
             pt.size = 0.02;
             pt.active = false;
         } else {
-            const folder = "./last";
+            const folder = "/last";
             const city = cities.find((c) => c.geoid === pt.geoid);
             const path = `${folder}/${city.asciiname}_${pt.geoid}_${seed}.png`;
             pt.path = path;
