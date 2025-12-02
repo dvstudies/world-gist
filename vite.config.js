@@ -12,6 +12,6 @@ export default defineConfig({
         },
     },
     root: ".",
-    base: "/",
+    base: "/world-gist/",
     build: { outDir: "dist" },
 });
