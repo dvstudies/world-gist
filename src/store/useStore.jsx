@@ -108,7 +108,7 @@ export const useStore = create((set, get) => ({
         const maxTimestep = get().maxTimestep;
         const last = timestep === maxTimestep;
 
-        const folder = last ? "/last" : "/intermediates";
+        const folder = last ? "./last" : "./intermediates";
         const tm = timestep.toString().padStart(3, "0");
 
         const path = last
